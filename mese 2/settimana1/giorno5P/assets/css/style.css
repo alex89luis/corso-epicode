@@ -1,0 +1,141 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+
+
+
+}
+
+header {
+    background-color: #ffc017;
+    height: 20%;
+}
+
+#header {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+li {
+    display: inline;
+    padding: 20px;
+
+}
+
+h1 {
+    font-size: 90px;
+    font-family: "Spectral", serif;
+    margin-bottom: 0;
+}
+
+.posizione-h1 {
+    padding-left: 50px;
+    padding-bottom: 50px;
+
+}
+
+button {
+    border-radius: 15px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    width: 100px;
+
+}
+
+.bottone {
+    width: 150px;
+}
+
+.hr1 {
+    margin: 0;
+    background-color: black;
+}
+
+main {
+    width: 100%;
+}
+
+article {
+    width: 100%;
+    padding-left: 50px;
+}
+
+#trading {
+    display: flex;
+}
+
+.trading-figlio {
+    display: flex;
+}
+
+#padre1 {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.figlio1 {
+    display: flex;
+
+}
+
+#padre2 {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.figlio2 {
+    display: flex;
+}
+
+.numero {
+    color: rgba(230, 231, 231, 255);
+    font-size: 40px;
+
+}
+
+.img-card {
+    border-radius: 5px;
+    width: 30px;
+}
+
+section {
+    width: 100%;
+    padding-left: 50px;
+}
+
+#padre3 {
+    
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.figlio3 {
+    display: flex;
+    padding-top: 40px;
+   
+
+}
+
+.img-card2 {
+    border-radius: 25px;
+    width: 25px;
+    height: 25px;
+}
+.aggiusto-img{
+    padding-top: 20px;
+}
