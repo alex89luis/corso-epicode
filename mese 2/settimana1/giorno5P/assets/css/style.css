@@ -16,18 +16,21 @@ header {
     padding-bottom: 10px;
     position: sticky;
     top: 0;
+    
 }
 
 
 
 
 #header {
+    
     padding-left: 50px;
     padding-right: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
+   
 }
 
 li {
@@ -216,3 +219,9 @@ section {
     font-size: 10px;
     text-align: center;
 }
+
+
+
+    
+
+
