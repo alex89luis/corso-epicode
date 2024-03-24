@@ -2,19 +2,18 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Route, RouterModule } from '@angular/router';
 
-
 import { AppComponent } from './app.component';
+import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HomeComponent } from './components/home/home.component';
-import { FiatComponent } from './components/fiat/fiat.component';
+import { Error404Component } from './components/error404/error404.component';
 import { FordComponent } from './components/ford/ford.component';
 import { AudiComponent } from './components/audi/audi.component';
-import { Error404Component } from './components/error404/error404.component';
-import { DisponibiliComponent } from './components/disponibili/disponibili.component';
-import { IndisponibiliComponent } from './components/indisponibili/indisponibili.component';
-import { BrandComponent } from './components/brand/brand.component';
-import { CardComponent } from './components/card/card.component';
+import { FiatComponent } from './components/fiat/fiat.component';
+import { EvidenceComponent } from './components/evidence/evidence.component';
+import { LoghiComponent } from './components/loghi/loghi.component';
+import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
+import { DetailsComponent } from './components/details/details.component';
 
 const routes: Route[] = [
   {
@@ -22,55 +21,41 @@ const routes: Route[] = [
     component: HomeComponent
   },
   {
-    path: 'Fiat',
-    component: FiatComponent
-  },
-  {
-    path: 'Ford',
+    path: 'ford',
     component: FordComponent
   },
   {
-    path: 'Audi',
+    path: 'audi',
     component: AudiComponent
+  },
+  {
+    path: 'fiat',
+    component: FiatComponent
+  },
+  {
+    path: 'details/:id',
+    component: DetailsComponent
   },
   {
     path: '**',
     component: Error404Component
-  },
-  {
-    path: 'Disponibili',
-    component: DisponibiliComponent
-  },
-  {
-    path: 'Indisponibili',
-    component: IndisponibiliComponent
-  },
-  {
-    path: 'Brand',
-    component: BrandComponent
-  },
-  {
-    path: 'Card',
-    component: CardComponent
   }
-];
-
+]
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     NavbarComponent,
     FooterComponent,
-    HomeComponent,
-    FiatComponent,
+    Error404Component,
     FordComponent,
     AudiComponent,
-    Error404Component,
-    DisponibiliComponent,
-    IndisponibiliComponent,
-    BrandComponent,
-    CardComponent,
-  
+    FiatComponent,
+    EvidenceComponent,
+    LoghiComponent,
+    JumbotronComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
