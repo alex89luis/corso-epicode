@@ -1,15 +1,15 @@
 
 <div class="card" *ngFor="let todo of alltodo">
-  <div class="card-header">
 
-  </div>
+
+
   <div class="card-body" [ngClass]="{ 'bg-success-subtle': todo.completed, 'bg-danger-subtle': !todo.completed } " >
     <h5 class="card-title">{{todo.todo}}</h5>
 
     <p class="card-body"> <span>Assigned to: </span>   {{users[todo.userId - 1].firstName}}
         {{users[todo.userId - 1].lastName}}</p>
 
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <input type="checkbox" class="form-check-input" [(ngModel)]="todo.completed">
         <label class="form-check-label" for="exampleCheck1"> Check me </label>
 
   </div>

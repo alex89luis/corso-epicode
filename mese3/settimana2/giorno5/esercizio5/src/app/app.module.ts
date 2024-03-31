@@ -9,6 +9,7 @@ import { HomeComponent } from './pagine/home/home.component';
 import { CompletiComponent } from './pagine/completi/completi.component';
 import { IncompletiComponent } from './pagine/incompleti/incompleti.component';
 import { UserTaskComponent } from './pagine/user-task/user-task.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -27,7 +28,8 @@ import { UserTaskComponent } from './pagine/user-task/user-task.component';
    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

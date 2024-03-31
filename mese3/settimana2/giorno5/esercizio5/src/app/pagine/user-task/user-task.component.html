@@ -1,13 +1,33 @@
-<div class="card mb-3" style="max-width: 540px;">
+<div class="card mb-3" *ngFor="let user of users">
+
   <div class="row g-0">
     <div class="col-md-4">
-      <img src="..." class="img-fluid rounded-start" alt="...">
+      <img [src]="user.user.image" class="img-fluid rounded-start" alt="...">
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider </p>
-        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        <h5 class="card-title">{{user.user.firstName}} {{user.user.lastName}}</h5>
+
+        <p class="card-text">{{user.user.title}}</p>
+        <div>
+          <div class="card" *ngFor="let todo of user.todo">
+
+
+
+            <div class="card-body" [ngClass]="{ 'bg-success-subtle': todo.completed, 'bg-danger-subtle': !todo.completed } " >
+              <h5 class="card-title">{{todo.todo}}</h5>
+
+              <p class="card-body"> <span>Assigned to: </span>   {{users[todo.userId - 1].user.firstName}}
+                  {{users[todo.userId - 1].user.lastName}}</p>
+
+                  <input type="checkbox" class="form-check-input" [(ngModel)]="todo.completed">
+                  <label class="form-check-label" for="exampleCheck1"> Check me </label>
+
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </div>
   </div>
