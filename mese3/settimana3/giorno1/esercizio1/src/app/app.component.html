@@ -1,0 +1,113 @@
+<div class="container text-center">
+  <h1 class="text-success-emphasis fw-bold">Compila Form</h1>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div>
+      <form #form="ngForm" (ngSubmit)="submit()">
+      <div ngModelGroup="userInfo" id="userInfo" #userGroup="ngModelGroup">
+        <div class="form-group">
+          <label class="text-secondary fw-bold" for="nome">nome</label>
+          <input
+            type="nome"
+            id="nome"
+            name="nome"
+            [(ngModel)]="userForm.nome"
+            class="form-control"
+            #nome="ngModel"
+            required
+          />
+          <p *ngIf="nome.invalid && nome.touched">
+            <strong class="text-danger">campo obbligatorio</strong>
+          </p>
+        </div>
+
+        <div class="form-group">
+          <label class="text-secondary fw-bold" for="cognome">cognome</label>
+          <input
+            type="cognome"
+            id="cognome"
+            name="cognome"
+            [(ngModel)]="userForm.cognome"
+            class="form-control"
+            #cognome="ngModel"
+            required
+          />
+          <p *ngIf="cognome.invalid && cognome.touched">
+            <strong class="text-danger">campo obbligatorio</strong>
+          </p>
+        </div>
+
+        <div class="form-group">
+          <label class="text-secondary fw-bold" for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            [(ngModel)]="userForm.email"
+            class="form-control"
+            #email="ngModel"
+            required
+          />
+          <p *ngIf="email.invalid && email.touched">
+            <strong class="text-danger">campo obbligatorio</strong>
+          </p>
+        </div>
+
+        <div class="form-group">
+          <label class="text-secondary fw-bold" for="username">username</label>
+          <input
+            type="username"
+            id="username"
+            name="username"
+            [(ngModel)]="userForm.username"
+            class="form-control"
+            #username="ngModel"
+            required
+          />
+          <p *ngIf="username.invalid && username.touched">
+            <strong class="text-danger">campo obbligatorio</strong>
+          </p>
+        </div>
+
+        <div class="form-group">
+          <label class="text-secondary fw-bold" for="password">password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            [(ngModel)]="userForm.password"
+            class="form-control"
+            #password="ngModel"
+            required
+          />
+          <p *ngIf="password.invalid && password.touched">
+            <strong class="text-danger">inserire password</strong>
+          </p>
+        </div>
+
+        <div class="radio" *ngFor="let gender of genders">
+          <input
+            type="radio"
+            name="gender"
+            id="gender"
+            ngModel
+            [value]="gender.value"
+          />
+          <label for="{{ gender.value }}">{{ gender.label }}</label>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-success mt-4"
+          [disabled]="form.invalid"
+        >
+          Invia
+        </button>
+      </div>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>
