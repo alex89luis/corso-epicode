@@ -1,0 +1,23 @@
+<h1 class="text-danger-emphasis fw-bold">Registrati</h1>
+
+<form class="w-25">
+
+  <input type="text" name="nome"
+  [(ngModel)]="registerData.name"
+  class="form-control" placeholder="nome">
+
+  <input type="text" name="lastName"
+  [(ngModel)]="registerData.lastName"
+  class="form-control" placeholder="Cognome">
+
+  <input type="email" name="email"
+  [(ngModel)]="registerData.email"
+  class="form-control" placeholder="email">
+
+  <input type="password" name="password"
+  [(ngModel)]="registerData.password"
+  class="form-control" placeholder="password">
+
+  <button (click)="signUp()" class="btn btn-success mt-3">Registrati</button>
+
+</form>

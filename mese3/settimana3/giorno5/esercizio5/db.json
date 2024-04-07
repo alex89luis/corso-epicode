@@ -1,0 +1,164 @@
+{
+  "users": [
+    {
+      "email": "mario@mario.it",
+      "password": "$2a$10$DkC8a7uOsllYjCuGZx6ikun7kx1Gct4E2FvV8yn8GG/REzhK4fjEe",
+      "name": "mario",
+      "id": 1
+    },
+    {
+      "email": "daniele@daniele",
+      "password": "$2a$10$4mWZzgaNaXgWKaQKll2KBOX1FCQgwVMXfA.HvGP.56pkyZjrj120.",
+      "name": "mario",
+      "id": 2
+    },
+    {
+      "email": "dani@dani.it",
+      "password": "$2a$10$S5tstRasiTpbAe49cZSzPOgX/SCa9WNn.ri7RnQUbmaU2adSc7.e6",
+      "name": "dani",
+      "id": 3
+    },
+    {
+      "email": "mario@daniele.it",
+      "password": "$2a$10$YvcNeFByoHD5qyZBwnuinO9XJEJFSUDhANxEe/CURx7GMW8m5cTli",
+      "name": "mario",
+      "id": 4
+    },
+    {
+      "email": "dani@simo.it",
+      "password": "$2a$10$tApca.B6dCUepnGxks1IBeTJAtAZDZuVxhrZxdPEieM/.AadSgeMa",
+      "name": "dani",
+      "id": 5
+    },
+    {
+      "email": "pablo@pablo",
+      "password": "$2a$10$78kxsOJNg80ihVG/hgd6gudXEV0a2cEWQ1TUgWAzBFEmuf8Kdr1XK",
+      "name": "pablo",
+      "id": 6
+    },
+    {
+      "email": "giova@giova.it",
+      "password": "$2a$10$jEL89PxJK3la0qd20kNog.MaS0OzLDlUAf8aNZGogtutNOYoudM7.",
+      "name": "giova",
+      "id": 7
+    },
+    {
+      "email": "dani@luise",
+      "password": "$2a$10$30wkOL9zDEVpzwepEvpuAeL.ByxYUWyasSl2oE6P1H/gnYZwz4Xxa",
+      "name": "daniele",
+      "lastName": "luise",
+      "id": 8
+    },
+    {
+      "email": "dany@dany.it",
+      "password": "$2a$10$vHn28K5Hq9BWMFTlfO86YeOScKsiXMlo.X8zWbGRh8u0Dk1yAV/H2",
+      "name": "sal",
+      "lastName": "el",
+      "id": 9
+    }
+  ],
+  "movies-popular": [
+    {
+      "id": 1,
+      "title": "Interstellar",
+      "year": 2014,
+      "genre": [
+        "Fantascienza",
+        "Avventura",
+        "Drammatico"
+      ],
+      "plot": "Un gruppo di esploratori spaziali intraprende un viaggio attraverso un wormhole per cercare un nuovo pianeta abitabile per l'umanità minacciata da una carestia globale.",
+      "image": "https://picsum.photos/id/237/200/300"
+    },
+    {
+      "id": 2,
+      "title": "Il Padrino",
+      "year": 1972,
+      "genre": [
+        "Drammatico",
+        "Crimine"
+      ],
+      "plot": "La saga di una famiglia mafiosa italiana americana guidata dal patriarca Vito Corleone e successivamente da suo figlio Michael.",
+      "image": "https://picsum.photos/id/238/200/300"
+    },
+    {
+      "id": 3,
+      "title": "Matrix",
+      "year": 1999,
+      "genre": [
+        "Fantascienza",
+        "Azione"
+      ],
+      "plot": "Un programmatore di computer scopre che il mondo in cui vive è una simulazione controllata da macchine intelligenti e si unisce a una ribellione per liberare l'umanità.",
+      "image": "https://picsum.photos/id/239/200/300"
+    },
+    {
+      "id": 4,
+      "title": "Forrest Gump",
+      "year": 1994,
+      "genre": [
+        "Commedia",
+        "Drammatico",
+        "Romantico"
+      ],
+      "plot": "La storia della vita straordinaria di Forrest Gump, un uomo semplice ma straordinario che ha influenzato inconsapevolmente diversi momenti chiave della storia americana.",
+      "image": "https://picsum.photos/id/240/200/300"
+    },
+    {
+      "id": 5,
+      "title": "Inception",
+      "year": 2010,
+      "genre": [
+        "Azione",
+        "Fantascienza",
+        "Thriller"
+      ],
+      "plot": "Un ladro professionista ruba segreti aziendali entrando nei sogni delle persone e viene incaricato di impiantare una nuova idea in un sogno.",
+      "image": "https://picsum.photos/id/241/200/300"
+    },
+    {
+      "id": 6,
+      "title": "Il Signore degli Anelli: La Compagnia dell'Anello",
+      "year": 2001,
+      "genre": [
+        "Fantasy",
+        "Avventura"
+      ],
+      "plot": "Un giovane hobbit viene incaricato di distruggere un potente anello per salvare la Terra di Mezzo da una minaccia oscura.",
+      "image": "https://picsum.photos/id/242/200/300"
+    },
+    {
+      "id": 7,
+      "title": "The Shawshank Redemption",
+      "year": 1994,
+      "genre": [
+        "Drammatico"
+      ],
+      "plot": "La storia di un banchiere condannato ingiustamente che trova la speranza e l'amicizia all'interno del sistema carcerario di Shawshank.",
+      "image": "https://picsum.photos/id/243/200/300"
+    },
+    {
+      "id": 8,
+      "title": "Schindler's List",
+      "year": 1993,
+      "genre": [
+        "Biografico",
+        "Drammatico",
+        "Storico"
+      ],
+      "plot": "La vera storia di Oskar Schindler, un uomo d'affari tedesco che ha salvato la vita di oltre mille ebrei durante l'Olocausto.",
+      "image": "https://picsum.photos/id/244/200/300"
+    },
+    {
+      "id": 9,
+      "title": "Fight Club",
+      "year": 1999,
+      "genre": [
+        "Drammatico",
+        "Thriller"
+      ],
+      "plot": "Un uomo insoddisfatto si unisce a un misterioso club di combattimento segreto che porta a una serie di eventi caotici e sconvolgenti.",
+      "image": "https://picsum.photos/id/245/200/300"
+    }
+  ]
+}

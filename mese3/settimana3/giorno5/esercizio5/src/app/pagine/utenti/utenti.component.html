@@ -1,0 +1,12 @@
+<h2 class="mb-3">Utenti Registrati:</h2>
+<div class="container ">
+
+  <div class=" row row-cols-4 mb-4" *ngFor="let user of users">
+    <h5 class="card-title">Nome utente:{{user.name}}</h5>
+
+    <p class="card-text">ID:{{user.id}}</p>
+    <p class="card-text">Email: {{user.email}}</p>
+
+  </div>
+
+</div>
